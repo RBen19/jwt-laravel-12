@@ -227,14 +227,7 @@ curl -X POST http://localhost:8000/api/auth/password-reset/request \
 
 **Note:** A 6-digit OTP will be sent to the user's email. The OTP expires in 15 minutes.
 
-**Error Response - Email Not Found (400):**
-```json
-{
-  "status": "error",
-  "message": "Email not found.",
-  "errors": {}
-}
-```
+**Note:** For security reasons, the API always returns a success message even if the email doesn't exist. This prevents email enumeration attacks.
 
 ---
 

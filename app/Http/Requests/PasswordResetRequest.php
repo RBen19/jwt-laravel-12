@@ -22,19 +22,7 @@ class PasswordResetRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'email' => ['required', 'string', 'email', 'exists:users,email'],
-        ];
-    }
-
-    /**
-     * Get custom error messages for validator.
-     *
-     * @return array
-     */
-    public function messages(): array
-    {
-        return [
-            'email.exists' => 'Email not found.',
+            'email' => ['required', 'string', 'email'],
         ];
     }
 }

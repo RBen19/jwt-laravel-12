@@ -111,6 +111,14 @@ class AuthService
      */
     public function sendPasswordResetOTP(string $email): void
     {
+        // Check if user exists - but don't reveal this to the caller
+        $user = User::where('email', $email)->first();
+
+        if (!$user) {
+            // Silently fail - return success to prevent email enumeration
+            return;
+        }
+
         // Generate 6-digit OTP
         $otp = str_pad(random_int(0, 999999), 6, '0', STR_PAD_LEFT);
 
