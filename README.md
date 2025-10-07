@@ -1,10 +1,10 @@
-# RedProduct - JWT Authentication API
+# JWT Authentication API
 
 A secure and robust RESTful API built with Laravel 12 that provides complete JWT-based authentication functionality including user registration, login, profile management, and password reset with OTP verification.
 
 ## About This Project
 
-RedProduct is a Laravel-based authentication API that implements industry-standard security practices to prevent common vulnerabilities like user enumeration attacks. The API uses JSON Web Tokens (JWT) for stateless authentication and includes features such as:
+this project is a Laravel-based authentication API that implements industry-standard security practices to prevent common vulnerabilities like user enumeration attacks. The API uses JSON Web Tokens (JWT) for stateless authentication and includes features such as:
 
 - **User Registration** - Create new user accounts with validated credentials
 - **User Login** - Authenticate users and issue JWT tokens with custom claims
@@ -66,7 +66,7 @@ Edit `.env` and configure the following:
 
 ```env
 # Application
-APP_NAME=RedProduct
+APP_NAME=jwtAuth
 APP_ENV=local
 APP_DEBUG=true
 APP_URL=http://localhost:8000
@@ -75,7 +75,7 @@ APP_URL=http://localhost:8000
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=redproduct
+DB_DATABASE=jwtAuth
 DB_USERNAME=root
 DB_PASSWORD=
 
@@ -90,7 +90,7 @@ MAIL_PORT=2525
 MAIL_USERNAME=your-username
 MAIL_PASSWORD=your-password
 MAIL_ENCRYPTION=tls
-MAIL_FROM_ADDRESS=noreply@redproduct.com
+MAIL_FROM_ADDRESS=noreply@gmail.com
 MAIL_FROM_NAME="${APP_NAME}"
 ```
 
