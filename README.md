@@ -44,8 +44,8 @@ this project is a Laravel-based authentication API that implements industry-stan
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
-go to the directory
+git clone https://github.com/RBen19/jwt-laravel-12.git
+cd jwt-laravel-12
 ```
 
 ### 2. Install Dependencies
